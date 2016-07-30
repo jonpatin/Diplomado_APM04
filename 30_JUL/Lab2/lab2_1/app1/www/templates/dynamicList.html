@@ -1,0 +1,12 @@
+<ion-view title="Dynamic List" id="page5" class=" ">
+    <ion-content padding="true" class="has-header">
+        <div class="list card " id="list-card21" ng-controller="dynListController">
+            <ion-item class="item-avatar  " id="list-list-item1">
+                <h2 ng-repeat="item in items">{{ item }}</h2>
+            </ion-item>
+            <div style="margin: 0px; line-height: 250px; text-align: center; background-color: rgb(232, 235, 239);">
+                <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>
+            </div>            
+        </div>        
+    </ion-content>
+</ion-view>

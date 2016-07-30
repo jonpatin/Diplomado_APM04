@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="lab1b">
+<head>
+	<title>AngularJS First Application</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<div ng-controller="lab1bController">
+		<h1>Filtros</h1>
+		<ul>
+			<li ng-repeat="filtro in filtros">{{ filtro  }}</li>
+		</ul>
+		<br/>
+		<h1>Inputs</h1>
+		<ul>
+			<li ng-repeat="input in inputs">Input[{{ input.type }}]</li>
+		</ul>		
+	</div>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/eje1b.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<div ng-controller="lab1aController">
+		<h1>Sample Application</h1>
+		<p>Nombre Completo: <input  type="text" ng-model="name" /></p>
+		<p>No de Identificación: <input  type="text" ng-model="id" /></p>
+		<!--p>Enter your Phone Number: <input  type="text" ng-model="phone" /></p//-->		
+		<li><span >{{ name | uppercase }}</span></li>
+		<li><span > No. de Identificación: {{ id }}</span></li>
+		<li><span>{{ profesion }}</span></li>
+		<li><span>{{salary | currency:"COP$"}}</span></li>
+		<li><span>{{ address }}</span></li>
+		<li><span>{{ phone }}</span></li>
+		
+	</div>

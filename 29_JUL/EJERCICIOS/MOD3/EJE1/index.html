@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="lab1a">
+<head>
+	<title>AngularJS First Application</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<div ng-controller="lab1aController">
+		<h1>Sample Application</h1>
+		<p>Nombre Completo: <input  type="text" ng-model="name" /></p>
+		<p>No de Identificación: <input  type="text" ng-model="id" /></p>
+		<!--p>Enter your Phone Number: <input  type="text" ng-model="phone" /></p//-->		
+		<li><span >{{ name | uppercase }}</span></li>
+		<li><span > No. de Identificación: {{ id }}</span></li>
+		<li><span>{{ profesion }}</span></li>
+		<li><span>{{salary | currency:"COP$"}}</span></li>
+		<li><span>{{ address }}</span></li>
+		<li><span>{{ phone }}</span></li>
+		
+	</div>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/eje1a.js"></script>
+</body>
+</html>

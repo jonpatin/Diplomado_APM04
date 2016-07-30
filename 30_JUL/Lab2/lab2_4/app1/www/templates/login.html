@@ -1,0 +1,18 @@
+<ion-view title="Login" id="page2" class=" ">
+    <ion-content padding="true" class="has-header">
+        <form id="login-form1" class="list ">
+            <ion-list id="login-list1" class=" ">
+                <label class="item item-input " id="login-input1" name="email">
+                    <span class="input-label">Username</span>
+                    <input type="text" placeholder="Ingrese su usuario o correo electrónico" ng-model="email">
+                </label>
+                <label class="item item-input " id="login-input2" name="pwd">
+                    <span class="input-label">Password</span>
+                    <input type="password" placeholder="" ng-model="pwd">
+                </label>
+            </ion-list>
+            <div class="spacer" style="width: 300px; height: 24px;"></div>
+            <a id="login-button1" class=" button button-stable  button-block " ng-click="login(email,pwd)">Log in</a>
+        </form>
+    </ion-content>
+</ion-view>
